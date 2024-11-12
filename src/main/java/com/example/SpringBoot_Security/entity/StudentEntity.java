@@ -1,40 +1,17 @@
 package com.example.SpringBoot_Security.entity;
 
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
+@NoArgsConstructor
 public class StudentEntity {
     private int id;
     private String name;
     private int marks;
-
-
-    public StudentEntity(int id, String name,int marks) {
-        this.id = id;
-        this.name = name;
-        this.marks = marks;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getMarks() {
-        return marks;
-    }
-
-    public void setMarks(int marks) {
-        this.marks = marks;
-    }
 
 
     @Override
